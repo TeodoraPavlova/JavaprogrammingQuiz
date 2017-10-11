@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appBackground" />
+
+    <TextView
+        android:id="@+id/first_question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/true_false_text"
+        android:textColor="@color/colorQuestionsTitles"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/next_button_to_second_question"
+        android:layout_width="@dimen/next_button_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/first_question_text"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginTop="166dp"
+        app:srcCompat="@drawable/nextbutton" />
+
+    <RadioGroup
+        android:id="@+id/first_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RadioButton
+            android:id="@+id/firstRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="139dp"
+            android:text="@string/integer"
+            android:textColor="@color/colorQuestionsAnswers"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/secondRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/double_text"
+            android:textColor="@color/colorQuestionsAnswers"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/the_correct_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/boolean_text"
+            android:textColor="@color/colorQuestionsAnswers"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/String"
+            android:textColor="@color/colorQuestionsAnswers"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>

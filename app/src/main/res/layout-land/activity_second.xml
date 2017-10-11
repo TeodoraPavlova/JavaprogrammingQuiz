@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appBackground" />
+
+    <TextView
+        android:id="@+id/this_is_a_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/this_is_a"
+        android:textColor="@color/colorQuestionsAnswers"
+        android:textSize="@dimen/text_size_beginning"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/java_quiz_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/this_is_a_text"
+        android:layout_centerHorizontal="true"
+        android:text="@string/java_quiz"
+        android:textColor="@color/colorQuestionsAnswers"
+        android:textSize="@dimen/text_size_beginning"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/good_luck_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number_of_questions_text"
+        android:layout_centerHorizontal="true"
+        android:text="@string/good_luck"
+        android:textAllCaps="true"
+        android:textColor="@color/colorQuestionsAnswers"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/number_of_questions_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/java_quiz_text"
+        android:layout_centerHorizontal="true"
+        android:text="@string/you_have_six_questions"
+        android:textColor="@color/colorQuestionsAnswers"
+        android:textSize="@dimen/text_size_beginning"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/start_quiz_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/good_luck_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:paddingBottom="30dp"
+        app:srcCompat="@drawable/javacupquizbegin" />
+
+</RelativeLayout>

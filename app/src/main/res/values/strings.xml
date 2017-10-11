@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Java programming Quiz</string>
+    <string name="this_is_a">This is a</string>
+    <string name="java_quiz">Java Quiz</string>
+    <string name="good_luck">GOOD LUCK</string>
+    <string name="you_have_six_questions">You have 6 questions</string>
+    <string name="true_false_text">Which data type represents the values true and false?</string>
+    <string name="integer">integer</string>
+    <string name="double_text">double</string>
+    <string name="boolean_text">boolean</string>
+    <string name="String">String</string>
+    <string name="whole_numbers_text">Which data type holds &quot;whole numbers&quot;?</string>
+    <string name="edittext_hint">Type your answer here :)</string>
+    <string name="if_text">if</string>
+    <string name="extends_text">extends</string>
+    <string name="bool">bool</string>
+    <string name="string">string</string>
+    <string name="these_java_keywords">Which of these are Java Keywords?</string>
+    <string name="more_than_one_answer">(There is more than 1 correct answer)</string>
+    <string name="keyword_class">Which is the keyword for creating class?</string>
+    <string name="class_text">class</string>
+    <string name="Class">Class</string>
+    <string name="create_class">create class</string>
+    <string name="on_create_class">onCreateClass</string>
+    <string name="return_nothing">Which method returns &quot;nothing&quot;?</string>
+    <string name="numeric_types">Which of these are numeric types?</string>
+    <string name="float_text">float</string>
+    <string name="int_text">int</string>
+    <string name="decimal">decimal</string>
+    <string name="to_check_score">To check your score tab the button below</string>
+</resources>

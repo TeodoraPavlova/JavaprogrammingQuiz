@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appBackground" />
+
+
+    <TextView
+        android:id="@+id/seventh_question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/numeric_types"
+        android:textColor="@color/colorQuestionsTitles"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/seventh_question_text"
+        android:text="@string/more_than_one_answer"
+        android:textColor="@color/colorUnderTitleText"
+        android:textSize="@dimen/answers_text_size"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/decimal_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/next_button_to_seventh_question"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:text="@string/decimal"
+        android:textColor="@color/colorQuestionsAnswers"
+        android:textSize="@dimen/answers_text_size"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/int_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/decimal_checkBox"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/decimal_checkBox"
+        android:layout_marginBottom="22dp"
+        android:text="@string/int_text"
+        android:textColor="@color/colorQuestionsAnswers"
+        android:textSize="@dimen/answers_text_size"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/float_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/double_checkBox"
+        android:layout_alignLeft="@+id/double_checkBox"
+        android:layout_alignStart="@+id/double_checkBox"
+        android:layout_marginBottom="15dp"
+        android:text="@string/float_text"
+        android:textColor="@color/colorQuestionsAnswers"
+        android:textSize="@dimen/answers_text_size"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/double_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/decimal_checkBox"
+        android:layout_alignLeft="@+id/decimal_checkBox"
+        android:layout_alignStart="@+id/decimal_checkBox"
+        android:layout_marginBottom="15dp"
+        android:text="@string/double_text"
+        android:textColor="@color/colorQuestionsAnswers"
+        android:textSize="@dimen/answers_text_size"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/next_button_to_seventh_question"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/int_checkBox"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/decimal_checkBox"
+        android:layout_toRightOf="@+id/decimal_checkBox"
+        android:paddingLeft="320dp"
+        app:srcCompat="@drawable/nextbutton" />
+
+
+</RelativeLayout>

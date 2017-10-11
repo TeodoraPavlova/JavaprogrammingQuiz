@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appBackground" />
+
+
+    <TextView
+        android:id="@+id/fourth_question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/keyword_class"
+        android:textColor="@color/colorQuestionsTitles"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/fourth_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="139dp"
+            android:text="@string/on_create_class"
+            android:textColor="@color/colorQuestionsAnswers"
+            android:textSize="@dimen/answers_text_size"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/the_correct_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/class_text"
+            android:textColor="@color/colorQuestionsAnswers"
+            android:textSize="@dimen/answers_text_size"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/create_class"
+            android:textColor="@color/colorQuestionsAnswers"
+            android:textSize="@dimen/answers_text_size"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/Class"
+            android:textColor="@color/colorQuestionsAnswers"
+            android:textSize="@dimen/answers_text_size"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/next_button_to_fifth_question"
+        android:layout_width="@dimen/next_button_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fourth_question_text"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:layout_marginTop="109dp"
+        app:srcCompat="@drawable/nextbutton" />
+</RelativeLayout>

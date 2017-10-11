@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appBackground" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fourth_question_text"
+        android:text="@string/more_than_one_answer"
+        android:textColor="@color/colorUnderTitleText"
+        android:textSize="@dimen/answers_text_size"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/extends_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:text="@string/extends_text"
+        android:textColor="@color/colorQuestionsAnswers"
+        android:textSize="@dimen/answers_text_size"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/if_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/extends_checkBox"
+        android:layout_alignStart="@+id/extends_checkBox"
+        android:layout_below="@+id/extends_checkBox"
+        android:layout_marginTop="12dp"
+        android:text="@string/if_text"
+        android:textColor="@color/colorQuestionsAnswers"
+        android:textSize="@dimen/answers_text_size"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/bool_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/if_checkBox"
+        android:layout_alignStart="@+id/if_checkBox"
+        android:layout_below="@+id/if_checkBox"
+        android:layout_marginTop="15dp"
+        android:text="@string/bool"
+        android:textColor="@color/colorQuestionsAnswers"
+        android:textSize="@dimen/answers_text_size"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/string_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bool_checkBox"
+        android:layout_alignStart="@+id/bool_checkBox"
+        android:layout_below="@+id/bool_checkBox"
+        android:layout_marginTop="14dp"
+        android:text="@string/string"
+        android:textColor="@color/colorQuestionsAnswers"
+        android:textSize="@dimen/answers_text_size"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/next_button_to_fourth_question"
+        android:layout_width="@dimen/next_button_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/extends_checkBox"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        app:srcCompat="@drawable/nextbutton" />
+
+    <TextView
+        android:id="@+id/fourth_question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="19dp"
+        android:text="@string/these_java_keywords"
+        android:textColor="@color/colorQuestionsTitles"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

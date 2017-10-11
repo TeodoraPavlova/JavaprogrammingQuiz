@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appBackground" />
+
+    <ImageView
+        android:id="@+id/next_button_to_sixth_question"
+        android:layout_width="@dimen/next_button_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fifth_question_text"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/nextbutton" />
+
+    <EditText
+        android:id="@+id/answer_fifth_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:hint="@string/edittext_hint"
+        android:inputType="textCapWords"
+        android:textColor="@color/colorQuestionsAnswers" />
+
+    <TextView
+        android:id="@+id/fifth_question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/answer_fifth_question"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp"
+        android:text="@string/return_nothing"
+        android:textColor="@color/colorQuestionsTitles"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
+
+</RelativeLayout>
